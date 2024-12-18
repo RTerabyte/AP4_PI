@@ -15,3 +15,13 @@ app.listen(app.get("port"), leerPuerto());
 function leerPuerto() {
   console.log(`hola desde el puerto ${app.get("port")}`);
 }
+//creamos una ruta get
+app.get("/rutaGet", function (req, res) {
+  console.log("alguen a accedido a la ruta get");
+  res.send("hola haciendo pruebas desde la ruta get");
+});
+
+app.get("/", function (req, res) {
+  console.log("alguen a accedido al servidor");
+  res.send("Bienvenido al servidor");
+});
