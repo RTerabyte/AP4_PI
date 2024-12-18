@@ -8,7 +8,9 @@ const app = express();
 // process.env.PORT sirve para que eliga el puerto que vamos a utilizar.
 app.set("port", process.env.PORT || 8080);
 
-//iniciando el servidor
-app.listen(app.get("port"), function () {
-  console.log(`hola desde el puerto ${app.get("port")}`);
-});
+//con esto detectaremos si funciona el puerto y  si realmente alguien a entrado.
+app.listen(app.get("port"), () =>
+  console.log(`hola desde el puerto ${app.get("port")}`)
+);
+
+app.use(require("./routes/index"));
