@@ -8,5 +8,32 @@ router.get("/rutaGetConRouter", (req, res) => {
   res.send("Hola desde index.js de la carpeta routes");
 });
 
+// ahora creamos todas las rutas que queramos
+router.get("/ruta1", (req, res) => {
+  console.log("Alguien a accedido desde la ruta 1");
+  res.send("Hola desde la ruta 1");
+});
+router.get("/ruta2", (req, res) => {
+  console.log("Alguien a accedido desde la ruta 2");
+  res.send("Hola desde la ruta 2");
+});
+router.get("/ruta3", (req, res) => {
+  console.log("Alguien a accedido desde la ruta 3");
+  res.send("Hola desde la ruta 3");
+});
+router.get("/ruta4", (req, res) => {
+  console.log("Alguien a accedido desde la ruta 4");
+  res.send("Hola desde la ruta 4");
+});
+router.get("/ruta5", (req, res) => {
+  console.log("Alguien a accedido desde la ruta 5");
+  res.send("Hola desde la ruta 5");
+});
+router.get("/rutaJSON", (req, res) => {
+  console.log("Alguien a accedido desde la ruta JSON");
+  res.json({
+    saludo: "Hola desde la ruta JSON",
+  });
+});
 // lo exportamos con este comando
 module.exports = router;
