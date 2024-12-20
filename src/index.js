@@ -13,4 +13,5 @@ app.listen(app.get("port"), () =>
   console.log(`hola desde el puerto ${app.get("port")}`)
 );
 
+//le indicamos donde estan las rutas
 app.use(require("./routes/index"));

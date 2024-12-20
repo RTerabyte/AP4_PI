@@ -11,6 +11,7 @@ router.get("/rutaGetConRouter", (req, res) => {
 // ahora creamos todas las rutas que queramos
 router.get("/ruta1", (req, res) => {
   console.log("Alguien a accedido desde la ruta 1");
+  //con res.send sera un mensaje que nos saldra en el navegador
   res.send("Hola desde la ruta 1");
 });
 router.get("/ruta2", (req, res) => {
