@@ -36,5 +36,9 @@ router.get("/rutaJSON", (req, res) => {
     saludo: "Hola desde la ruta JSON",
   });
 });
+router.post("/rutaPOST", (req, res) => {
+  console.log("Alguien a accedido a la ruta POST");
+  res.send("Hola desde la ruta POST");
+});
 // lo exportamos con este comando
 module.exports = router;
