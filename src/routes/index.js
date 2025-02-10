@@ -36,8 +36,25 @@ router.get("/rutaJSON", (req, res) => {
     saludo: "Hola desde la ruta JSON",
   });
 });
-router.post("/rutaPOST", (req, res) => {
-  console.log("Alguien a accedido a la ruta POST");
+router.post("/rutaPOST1", (req, res) => {
+  console.log("Alguien a accedido a la ruta POST 1");
+  res.send("Hola desde la ruta POST");
+});
+router.post("/rutaPOST2", (req, res) => {
+  console.log("Alguien a accedido a la ruta POST 2");
+  res.send("Hola desde la ruta POST");
+});
+router.post("/rutaPOST3", (req, res) => {
+  console.log("Alguien a accedido a la ruta POST 3");
+  res.send("Hola desde la ruta POST");
+});
+router.post("/rutaPOST4", (req, res) => {
+  console.log("Alguien a accedido a la ruta POST 4");
+  res.send("Hola desde la ruta POST");
+});
+router.post("/rutaPOS5", (req, res) => {
+  req.body = "Guardamos los datos de los formularios";
+  console.log("Alguien a accedido a la ruta POST 5");
   res.send("Hola desde la ruta POST");
 });
 // lo exportamos con este comando
