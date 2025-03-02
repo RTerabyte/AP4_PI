@@ -55,10 +55,13 @@ router.post("/rutaPOST4", (req, res) => {
 });
 //Utilizamos esta para la AP6
 router.post("/rutaPOST5", (req, res) => {
-  req.body = "Guardamos los datos de los formularios";
+  console.log(req.body.nombre);
+  console.log(req.body.primerApellido);
+  console.log(req.body.segundoApellido);
+  console.log(req.body.dni);
+  console.log(req.body.telefono);
   console.log("Alguien a accedido a la ruta POST 5");
-  console.log(req.body);
-  res.send("Hola desde la ruta POST 5");
+  res.redirect("http://localhost:8080/rutaPOST5");
 });
 // lo exportamos con este comando
 module.exports = router;
