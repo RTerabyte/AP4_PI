@@ -26,6 +26,7 @@ router.get("/ruta4", (req, res) => {
   console.log("Alguien a accedido desde la ruta 4");
   res.send("Hola desde la ruta 4");
 });
+//Utilizamos esta para la AP6
 router.get("/ruta5", (req, res) => {
   console.log("Alguien a accedido desde la ruta 5");
   res.send("Hola desde la ruta 5");
@@ -52,6 +53,7 @@ router.post("/rutaPOST4", (req, res) => {
   console.log("Alguien a accedido a la ruta POST 4");
   res.send("Hola desde la ruta POST 4");
 });
+//Utilizamos esta para la AP6
 router.post("/rutaPOST5", (req, res) => {
   req.body = "Guardamos los datos de los formularios";
   console.log("Alguien a accedido a la ruta POST 5");
