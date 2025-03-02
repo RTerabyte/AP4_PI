@@ -61,7 +61,8 @@ router.post("/rutaPOST5", (req, res) => {
   console.log(req.body.dni);
   console.log(req.body.telefono);
   console.log("Alguien a accedido a la ruta POST 5");
-  res.redirect("http://localhost:8080/rutaPOST5");
+  res.json({ mensaje: "Datos recibidos correctamente" });
 });
+
 // lo exportamos con este comando
 module.exports = router;
