@@ -10,6 +10,9 @@ const app = express();
 app.set("port", process.env.PORT || 8080);
 app.use(morgan("dev"));
 
+//añadimos esto para pdoer recibir los datos
+app.use(express.urlencoded({ extended: false }));
+
 //con esto detectaremos si funciona el puerto y  si realmente alguien a entrado.
 app.listen(app.get("port"), () =>
   console.log(`hola desde el puerto ${app.get("port")}`)
