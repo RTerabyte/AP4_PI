@@ -33,8 +33,8 @@ router.get("/ruta5", (req, res) => {
   console.log(req.body.segundoApellido);
   console.log(req.body.dni);
   console.log(req.body.telefono);
-  console.log("Alguien a accedido desde la ruta 5");
-  res.send("Hola desde la ruta 5");
+  console.log("Alguien a accedido desde la ruta 5 tipo get");
+  res.send("Hola desde la ruta 5 tipo get");
 });
 router.get("/rutaJSON", (req, res) => {
   console.log("Alguien a accedido desde la ruta JSON");
@@ -65,7 +65,7 @@ router.post("/rutaPOST5", (req, res) => {
   console.log(req.body.segundoApellido);
   console.log(req.body.dni);
   console.log(req.body.telefono);
-  console.log("Alguien a accedido a la ruta POST 5");
+  console.log("Alguien a accedido a la ruta POST 5 tipo post");
   res.redirect("https://nodeserver-e0jd.onrender.com");
 });
 
