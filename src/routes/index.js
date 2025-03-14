@@ -28,6 +28,11 @@ router.get("/ruta4", (req, res) => {
 });
 //Utilizamos esta para la AP6
 router.get("/ruta5", (req, res) => {
+  console.log(req.body.nombre);
+  console.log(req.body.primerApellido);
+  console.log(req.body.segundoApellido);
+  console.log(req.body.dni);
+  console.log(req.body.telefono);
   console.log("Alguien a accedido desde la ruta 5");
   res.send("Hola desde la ruta 5");
 });
